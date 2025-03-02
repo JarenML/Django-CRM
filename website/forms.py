@@ -37,7 +37,7 @@ class AddRecordForm(forms.ModelForm):
 
     class Meta:
         model = Record
-        exclude = '__all__'
+        fields = '__all__'
 
         widgets = {
             'first_name': forms.widgets.TextInput(attrs={'placeholder': 'First Name', 'class': 'form-control'}),
